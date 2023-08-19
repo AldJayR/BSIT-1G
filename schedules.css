@@ -193,7 +193,13 @@ color: white;
   }
 
   .rightitems {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 0;
+  }
+  .About {
+    margin-bottom: 5px;
   }
 
   .text-overlay {
@@ -237,8 +243,5 @@ color: white;
 
   .footercontent {
     font-size: 16px;
-  }
-  .box {
-
   }
 }
