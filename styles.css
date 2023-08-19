@@ -1,0 +1,196 @@
+:root {
+    --border-color-image: rgb(10, 163, 252);
+}
+/* DEFAULT CSS */
+body {
+    margin: 0;
+    padding-top: 65px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+p {
+    font-family: Bricolage Grotesque, Arial, sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+div {
+    font-family: Bricolage Grotesque, Arial, sans-serif;
+}
+
+/* HEADER CSS */
+
+.headerbox {
+    background-color: #1b6bf5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 15px;
+    position: fixed;
+    height: 65px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+}
+.itlogo {
+    height: 70px;
+    border-radius: 50px;
+}
+.class-section {
+    display: flex;
+    align-items: center;
+    padding-left: 220px;
+    font-size: 50px;
+    color: yellow;
+}
+.rightitems {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 25px;
+    font-size: 20px;
+    color: yellow;
+}
+.About {
+    margin-left: 25px;
+}
+.linking {
+    color: inherit;
+    text-decoration: none;
+}
+/* PICTURE CSS */
+.cict-building-image {
+    position: relative;
+}
+.image-building {
+    width: 100%;
+}
+.overlay {
+    background-image: linear-gradient(rgba(22, 25, 221, 0.7), rgba(10, 163, 252, 0.7));
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 3px;
+    height: 500px;
+    width: 100%;
+}
+.text-overlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 150px;
+    left: 43%;
+    font-size: 40px;
+    color: yellow;
+}
+.caption {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: yellow;
+    top: 200px;
+    left: 36%;
+}
+
+
+/* STUDENTS SECTION */
+.students-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.class-officer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+.president {
+    display: flex;
+    justify-content: center;
+    margin-top:  40px;
+    flex-direction: column;
+}
+.container {
+    display: inline-block; 
+    border-radius: 30px; 
+    overflow: hidden; 
+    border-width: 10px;
+    border-color: var(--border-color-image);
+    border-style: solid;
+    flex-direction: column;
+}
+.quinn {
+    height: 100%;
+    width: 100%;
+    display: block;
+    
+}
+.name {
+    font-weight: bold;
+    font-size: 20px;
+    display: grid;
+    margin-top: 5px;
+}
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+.second-class-officers {
+    display: grid;
+    grid-template-columns: repeat(3, 460px);
+    margin-left: 70px;
+    gap: 10px;
+    margin-top: 20px;
+}
+.second-row-photo {
+    width: 250px;
+    height: 100%;
+    display: block;
+}
+.second-row-name {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 5px;
+    width: 270px;
+    display: grid;
+    justify-content: center;
+}
+.second-row-title {
+   display: flex;
+   width: 275px;
+   align-items: center;
+   justify-content: center;
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 30px;
+    background-color: blue;
+    height: 100px;
+}
+.footercontent {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: yellow;
+    font-size: 25px;
+}
+
+/* TO ADD/FIX
+
+media query
+href to buttons on header
+leads to other pages
+every student
+schedule
+contact numbers
+
+*/
