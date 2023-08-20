@@ -175,6 +175,9 @@ color: white;
   font-size: 25px;
 }
 @media (max-width: 768px) {
+  body {
+    padding-top: 170px;
+  }
   .headerbox {
     padding: 5px;
     height: auto;
