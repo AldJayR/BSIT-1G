@@ -16,7 +16,6 @@ p {
 div {
     font-family: Bricolage Grotesque, Arial, sans-serif;
 }
-
 /* HEADER CSS */
 
 .headerbox {
@@ -143,11 +142,16 @@ div {
     justify-content: center;
     margin-top: 5px;
 }
+.second-row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
 .second-class-officers {
     display: grid;
-    grid-template-columns: repeat(3, 460px);
-    margin-left: 70px;
-    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
     margin-top: 20px;
 }
 .second-row-photo {
@@ -194,3 +198,92 @@ schedule
 contact numbers
 
 */
+
+@media (max-width: 768px) {
+    .headerbox {
+        padding: 5px;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        overflow: hidden;
+      }
+      .image-building {
+        width: 100%;
+        height: 300px;
+      }
+      .class-section {
+        padding: 10px;
+        font-size: 30px;
+      }
+    
+      .rightitems {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-right: 0;
+      }
+      .About {
+        margin-bottom: 5px;
+      }
+    
+      .text-overlay {
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 30px;
+      }
+    
+      .caption {
+        top: 150px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 20px;
+      }
+         .class-officer {
+        font-size: 24px;
+    }
+    
+    
+    .president {
+        margin-top: 20px;
+    }
+    
+   
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        border-width: 5px;
+    }
+    .quinn {
+        width: 100%;
+        height: auto;
+    }
+    .second-row-name {
+        font-size: 18px;
+        width: 100%;
+    }
+    .second-row-title {
+        width: 100%;
+    }
+    
+    /* Adjust second-class-officers section */
+    .second-class-officers {
+        grid-template-columns: repeat(3, 1fr);
+        padding-left: 0 !important;
+        gap: 15px;
+    }
+    .second-row-photo {
+        width: 100%;
+    }
+    .second-row-name, .second-row-title {
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* Adjust footer */
+    .footercontent {
+        font-size: 20px;
+    }
+}
+
