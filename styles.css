@@ -1,6 +1,7 @@
 :root {
     --border-color-image: rgb(10, 163, 252);
 }
+
 /* DEFAULT CSS */
 body {
     margin: 0;
@@ -133,13 +134,10 @@ div {
 .name {
     font-weight: bold;
     font-size: 20px;
-    display: grid;
     margin-top: 5px;
 }
 .title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     margin-top: 5px;
 }
 .second-row {
@@ -151,7 +149,7 @@ div {
 .second-class-officers {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 100px;
+    gap: 50px;
     margin-top: 20px;
 }
 .second-row-photo {
@@ -164,14 +162,10 @@ div {
     font-size: 20px;
     margin-top: 5px;
     width: 270px;
-    display: grid;
-    justify-content: center;
+    text-align: center;
 }
 .second-row-title {
-   display: flex;
-   width: 275px;
-   align-items: center;
-   justify-content: center;
+   text-align: center;
 }
 
 /* FOOTER */
@@ -181,16 +175,12 @@ div {
     height: 100px;
 }
 .footercontent {
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    text-align: center;
     color: yellow;
     font-size: 25px;
 }
 
 /* TO ADD/FIX
-
-media query
 href to buttons on header
 leads to other pages
 every student
@@ -200,90 +190,61 @@ contact numbers
 */
 
 @media (max-width: 768px) {
-    .headerbox {
-        padding: 5px;
-        height: auto;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-        overflow: hidden;
-      }
-      .image-building {
-        width: 100%;
-        height: 300px;
-      }
-      .class-section {
-        padding: 10px;
-        font-size: 30px;
-      }
-    
-      .rightitems {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        margin-right: 0;
-      }
-      .About {
-        margin-bottom: 5px;
-      }
-    
-      .text-overlay {
-        top: 100px;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 30px;
-      }
-    
-      .caption {
-        top: 150px;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 20px;
-      }
-         .class-officer {
-        font-size: 24px;
+    body {
+      padding-top: 170px;
     }
-    
-    
-    .president {
+    .headerbox {
+      padding: 5px;
+      height: auto;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      overflow: hidden;
+    }
+    .image-building {
+      width: 100%;
+      height: 300px;
+    }
+    .class-section {
+      padding: 10px;
+      font-size: 30px;
+    }
+  
+    .rightitems {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-right: 0;
+    }
+    .About {
+      margin-bottom: 5px;
+    }
+  
+    .text-overlay {
+      top: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 30px;
+    }
+  
+    .caption {
+      top: 150px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 20px;
+    }
+    .second-class-officers {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
         margin-top: 20px;
     }
-    
-   
-    .container {
-        width: 100%;
-        margin: 0 auto;
-        border-width: 5px;
+    .footer {
+      height: 50px;
     }
-    .quinn {
-        width: 100%;
-        height: auto;
-    }
-    .second-row-name {
-        font-size: 18px;
-        width: 100%;
-    }
-    .second-row-title {
-        width: 100%;
-    }
-    
-    /* Adjust second-class-officers section */
-    .second-class-officers {
-        grid-template-columns: repeat(3, 1fr);
-        padding-left: 0 !important;
-        gap: 15px;
-    }
-    .second-row-photo {
-        width: 100%;
-    }
-    .second-row-name, .second-row-title {
-        width: 100%;
-        text-align: center;
-    }
-    
-    /* Adjust footer */
+  
     .footercontent {
-        font-size: 20px;
+      font-size: 16px;
     }
-}
+  }
 
