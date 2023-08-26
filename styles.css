@@ -1,7 +1,6 @@
 :root {
     --border-color-image: rgb(10, 163, 252);
 }
-
 /* DEFAULT CSS */
 body {
     margin: 0;
@@ -51,13 +50,14 @@ div {
     font-size: 20px;
     color: yellow;
 }
-.About {
+.About, .fourth {
     margin-left: 25px;
 }
 .linking {
     color: inherit;
     text-decoration: none;
 }
+
 /* PICTURE CSS */
 .cict-building-image {
     position: relative;
@@ -191,13 +191,12 @@ contact numbers
 
 @media (max-width: 768px) {
     body {
-      padding-top: 170px;
+      padding-top: 100px;
     }
     .headerbox {
-      padding: 5px;
       height: auto;
-      flex-direction: column;
       align-items: flex-start;
+      flex-direction: row;
       width: 100%;
       overflow: hidden;
     }
@@ -206,15 +205,22 @@ contact numbers
       height: 300px;
     }
     .class-section {
-      padding: 10px;
-      font-size: 30px;
+        padding-left: 40px;
+      font-size: 40px;
+      justify-content: center;
+      height: 150px;
+      
     }
-  
+    .itlogo {
+        margin-top: 30px;
+        border-radius: 70%;
+    }
     .rightitems {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      margin-right: 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      margin-right: 15;
+      gap: 10px;
+
     }
     .About {
       margin-bottom: 5px;
