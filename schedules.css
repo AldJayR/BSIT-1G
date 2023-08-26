@@ -46,7 +46,7 @@ div {
   font-size: 20px;
   color: yellow;
 }
-.About {
+.About, .fourth {
   margin-left: 25px;
 }
 .linking {
@@ -111,7 +111,7 @@ div {
   color: red
 }
 .info {
-  line-height: 25px;
+  line-height: 30px;
   font-size: 18px;
   margin-bottom: 15px;
 }
@@ -174,15 +174,15 @@ color: white;
   color: yellow;
   font-size: 25px;
 }
+
 @media (max-width: 768px) {
   body {
-    padding-top: 170px;
+    padding-top: 100px;
   }
   .headerbox {
-    padding: 5px;
     height: auto;
-    flex-direction: column;
     align-items: flex-start;
+    flex-direction: row;
     width: 100%;
     overflow: hidden;
   }
@@ -191,20 +191,27 @@ color: white;
     height: 300px;
   }
   .class-section {
-    padding: 10px;
-    font-size: 30px;
+      padding-left: 40px;
+    font-size: 40px;
+    justify-content: center;
+    height: 150px;
+    
   }
-
+  .itlogo {
+      margin-top: 3px;
+      border-radius: 70%;
+  }
   .rightitems {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-right: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-right: 15;
+    gap: 10px;
+    margin-top: 5px;
+
   }
   .About {
     margin-bottom: 5px;
   }
-
   .text-overlay {
     top: 100px;
     left: 50%;
@@ -222,10 +229,14 @@ color: white;
   .schedule-content {
     grid-template-columns: 1fr;
     padding: 10px;
+    
   }
-
+  .schedule-item {
+    margin-bottom: 20px;
+  }
   .day {
     font-size: 20px;
+    
   }
 
   .subject {
