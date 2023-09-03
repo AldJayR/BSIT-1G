@@ -4,45 +4,45 @@
 /* DEFAULT CSS */
 body {
     margin: 0;
-    padding-top: 65px;
+    padding-top: 45px;
     overflow-x: hidden;
     overflow-y: auto;
-}
-p {
+  }
+  p {
     font-family: Bricolage Grotesque, Arial, sans-serif;
     margin-top: 0;
     margin-bottom: 0;
-}
-div {
+  }
+  div {
     font-family: Bricolage Grotesque, Arial, sans-serif;
-}
-/* HEADER CSS */
-
-.headerbox {
+  }
+  /* HEADER CSS */
+  
+  .headerbox {
     background-color: #1b6bf5;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 10px 15px;
     position: fixed;
-    height: 65px;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1;
-    width: 100%;
-}
-.itlogo {
-    height: 70px;
-    border-radius: 50px;
-}
-.class-section {
+    z-index: 100;
+    overflow: hidden;
+    height: 40px;
+  }
+  .itlogo {
+    height: 60px;
+    border-radius: 50%;
+    padding-top: 10px;
+  }
+  .class-section {
     display: flex;
-    align-items: center;
-    padding-left: 220px;
+    align-items: flex-start;
     font-size: 50px;
     color: yellow;
-}
+  }
 .rightitems {
     display: flex;
     justify-content: space-between;
@@ -212,7 +212,7 @@ contact numbers
       
     }
     .itlogo {
-        margin-top: 30px;
+        margin-top: 3px;
         border-radius: 70%;
     }
     .rightitems {
@@ -229,6 +229,8 @@ contact numbers
     .text-overlay {
       top: 100px;
       left: 50%;
+
+      
       transform: translateX(-50%);
       font-size: 30px;
     }
